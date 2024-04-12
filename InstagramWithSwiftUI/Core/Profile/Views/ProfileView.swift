@@ -9,11 +9,27 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack {
-            VStack {
-                ProfileHeaderView()
+        NavigationStack {
+            ScrollView {
+                VStack() {
+                    ProfileHeaderView()
+                }
+                ProfileGridView()
+                    .padding(.top, 5)
+            }
+            .navigationTitle("프로필")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundStyle(.black)
+                    }
+                }
             }
         }
+
     }
 }
 
