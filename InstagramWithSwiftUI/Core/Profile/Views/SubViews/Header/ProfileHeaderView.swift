@@ -43,13 +43,15 @@ struct ProfileHeaderView: View {
                 Text("정한별")
                     .font(.headline)
                     .fontWeight(.semibold)
-                
+                    .padding(.bottom, 5)
+
                 Text("월월월월월월월월월월월월월월월월월월월월")
                     .font(.subheadline)
             }
-            .frame(maxWidth: .infinity, maxHeight: 70,  alignment: .leading)
+            .frame(maxWidth: .infinity, maxHeight: 70, alignment: .leading)
             .padding(.horizontal)
-            
+            .padding(.bottom, 5)
+
             Button {
                 
             } label: {
@@ -57,7 +59,7 @@ struct ProfileHeaderView: View {
                     .font(.headline)
                     .fontWeight(.semibold)
                     .frame(width: 360, height: 32)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.foreground)
                     .overlay {
                         RoundedRectangle(cornerRadius: 6).stroke(.gray, lineWidth: 1)
                     }

@@ -28,3 +28,7 @@ struct ProfileHeaderStatView: View {
         .frame(width: 75)
     }
 }
+
+#Preview {
+    ProfileHeaderStatView(value: 10, title: "타이틀")
+}

@@ -19,7 +19,7 @@ struct ProfileGridView: View {
 
     var body: some View {
         LazyVGrid(columns: gridItems, spacing: 1) {
-            ForEach(0...50, id: \.self) { index in
+            ForEach(0...50, id: \.self) { _ in
                 Image("naverLogo")
                     .resizable()
                     .scaledToFill()
@@ -28,9 +28,6 @@ struct ProfileGridView: View {
     }
 }
 
-
-struct ProfileGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileGridView()
-    }
+#Preview {
+    ProfileGridView()
 }

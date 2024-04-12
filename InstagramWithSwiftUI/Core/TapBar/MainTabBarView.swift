@@ -39,8 +39,6 @@ struct MainTabBarView: View {
     }
 }
 
-struct MainTabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabBarView()
-    }
+#Preview {
+    MainTabBarView()
 }
