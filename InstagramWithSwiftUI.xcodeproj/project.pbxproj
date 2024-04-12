@@ -10,6 +10,7 @@
 		F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */; };
 		F2E01B872BC8C5FF004CA206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B862BC8C5FF004CA206 /* Assets.xcassets */; };
 		F2E01B8A2BC8C5FF004CA206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */; };
+		F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramWithSwiftUIApp.swift; sourceTree = "<group>"; };
 		F2E01B862BC8C5FF004CA206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		F2E01B9B2BC8C72B004CA206 /* TapBar */ = {
 			isa = PBXGroup;
 			children = (
+				F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */,
 			);
 			path = TapBar;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */,
+				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = G42AKFB24M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -400,7 +404,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = G42AKFB24M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
