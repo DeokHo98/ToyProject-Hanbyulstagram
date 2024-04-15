@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F298D17C2BCD010F006B611A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17B2BCD010F006B611A /* FeedView.swift */; };
+		F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17D2BCD0489006B611A /* FeedCell.swift */; };
+		F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */; };
 		F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */; };
 		F2E01B872BC8C5FF004CA206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B862BC8C5FF004CA206 /* Assets.xcassets */; };
 		F2E01B8A2BC8C5FF004CA206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F298D17B2BCD010F006B611A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		F298D17D2BCD0489006B611A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBottomButton.swift; sourceTree = "<group>"; };
 		F2E01B7F2BC8C5FE004CA206 /* InstagramWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramWithSwiftUIApp.swift; sourceTree = "<group>"; };
 		F2E01B862BC8C5FF004CA206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F298D17F2BCD048B006B611A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F298D17D2BCD0489006B611A /* FeedCell.swift */,
+				F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		F2E01B762BC8C5FE004CA206 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +153,8 @@
 		F2E01B972BC8C6B6004CA206 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				F298D17B2BCD010F006B611A /* FeedView.swift */,
+				F298D17F2BCD048B006B611A /* SubViews */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -293,10 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F298D17C2BCD010F006B611A /* FeedView.swift in Sources */,
 				F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */,
 				F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */,
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
+				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
 				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
+				F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */,
 				F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */,
 				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
 			);
