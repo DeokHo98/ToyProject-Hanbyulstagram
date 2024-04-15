@@ -10,21 +10,21 @@ import SwiftUI
 struct MainTabBarView: View {
     var body: some View {
         TabView {
-            Text("피드")
+            FeedView()
                 .tabItem {
                     Image(systemName: "house")
                 }
-
+            
             Text("친구검색")
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
-
+            
             Text("포스팅")
                 .tabItem {
                     Image(systemName: "plus")
                 }
-
+            
             Text("알림")
                 .tabItem {
                     Image(systemName: "heart")
@@ -32,7 +32,7 @@ struct MainTabBarView: View {
 
             ProfileView()
                 .tabItem {
-                    Image (systemName: "person")
+                    Image(systemName: "person")
                 }
         }
         .tint(Color(uiColor: .label))
