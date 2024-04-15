@@ -30,17 +30,15 @@ struct MainTabBarView: View {
                     Image(systemName: "heart")
                 }
 
-            Text("프로필")
+            ProfileView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image (systemName: "person")
                 }
         }
-        .tint(.black)
+        .tint(Color(uiColor: .label))
     }
 }
 
-struct MainTabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabBarView()
-    }
+#Preview {
+    MainTabBarView()
 }

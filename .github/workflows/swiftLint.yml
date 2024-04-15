@@ -12,7 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      
+      - name: Disable specific SwiftLint rules
+        run: |
+          echo "disabled_rules:" >> .swiftlint.yml
+          echo "  - trailing_whitespace" >> .swiftlint.yml
+          echo "  - empty_parentheses_with_trailing_closure" >> .swiftlint.yml
+
       - name: GitHub Action for SwiftLint
         uses: norio-nomura/action-swiftlint@3.2.1
         

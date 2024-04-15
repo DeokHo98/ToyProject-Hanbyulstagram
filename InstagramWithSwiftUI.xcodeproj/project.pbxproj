@@ -11,6 +11,10 @@
 		F2E01B872BC8C5FF004CA206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B862BC8C5FF004CA206 /* Assets.xcassets */; };
 		F2E01B8A2BC8C5FF004CA206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */; };
 		F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */; };
+		F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BAA2BC8F5E1004CA206 /* ProfileHeaderView.swift */; };
+		F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BAB2BC8F5E1004CA206 /* ProfileView.swift */; };
+		F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BB22BC8FDE7004CA206 /* ProfileHeaderStatView.swift */; };
+		F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F2E01B862BC8C5FF004CA206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		F2E01BAA2BC8F5E1004CA206 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		F2E01BAB2BC8F5E1004CA206 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F2E01BB22BC8FDE7004CA206 /* ProfileHeaderStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderStatView.swift; sourceTree = "<group>"; };
+		F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		F2E01B962BC8C6A9004CA206 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F2E01BAE2BC8FAA8004CA206 /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -169,6 +178,49 @@
 				F2E01B862BC8C5FF004CA206 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		F2E01BAE2BC8FAA8004CA206 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01BAB2BC8F5E1004CA206 /* ProfileView.swift */,
+				F2E01BB02BC8FDCC004CA206 /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2E01BAF2BC8FABB004CA206 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01BAA2BC8F5E1004CA206 /* ProfileHeaderView.swift */,
+				F2E01BB12BC8FDD5004CA206 /* SubViews */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F2E01BB02BC8FDCC004CA206 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01BB42BC8FF90004CA206 /* GridView */,
+				F2E01BAF2BC8FABB004CA206 /* Header */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F2E01BB12BC8FDD5004CA206 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01BB22BC8FDE7004CA206 /* ProfileHeaderStatView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F2E01BB42BC8FF90004CA206 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */,
+			);
+			path = GridView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */,
 				F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */,
+				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
+				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
+				F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */,
 				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
-				DEVELOPMENT_TEAM = G42AKFB24M;
+				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -405,7 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
-				DEVELOPMENT_TEAM = G42AKFB24M;
+				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
