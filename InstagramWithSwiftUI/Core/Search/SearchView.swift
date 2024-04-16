@@ -18,7 +18,7 @@ struct SearchView: View {
                     LazyVStack {
                         ForEach(1...20, id: \.self) { _ in
                             HStack {
-                                Image("Hanbyoul")
+                                Image("한별이")
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 45, height: 45)
