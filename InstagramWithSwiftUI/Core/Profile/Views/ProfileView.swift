@@ -14,11 +14,11 @@ struct ProfileView: View {
                 VStack() {
                     ProfileHeaderView()
                 }
+                .padding(.top, 5)
                 ProfileGridView()
                     .padding(.top, 5)
             }
-            .navigationTitle("프로필")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(DefaultNavigation(title: "프로필"))
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {

@@ -10,6 +10,8 @@
 		F298D17C2BCD010F006B611A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17B2BCD010F006B611A /* FeedView.swift */; };
 		F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17D2BCD0489006B611A /* FeedCell.swift */; };
 		F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */; };
+		F298D1882BCE193E006B611A /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1872BCE193E006B611A /* NavigationModifier.swift */; };
+		F298D18A2BCE1A58006B611A /* TabBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1892BCE1A58006B611A /* TabBarModifier.swift */; };
 		F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */; };
 		F2E01B872BC8C5FF004CA206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B862BC8C5FF004CA206 /* Assets.xcassets */; };
 		F2E01B8A2BC8C5FF004CA206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */; };
@@ -24,6 +26,9 @@
 		F298D17B2BCD010F006B611A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F298D17D2BCD0489006B611A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBottomButton.swift; sourceTree = "<group>"; };
+		F298D1872BCE193E006B611A /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
+		F298D1892BCE1A58006B611A /* TabBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModifier.swift; sourceTree = "<group>"; };
+		F2C8F6E32BCE30E400340BF6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F2E01B7F2BC8C5FE004CA206 /* InstagramWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramWithSwiftUIApp.swift; sourceTree = "<group>"; };
 		F2E01B862BC8C5FF004CA206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +60,15 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		F298D1862BCE1925006B611A /* CustomModifier */ = {
+			isa = PBXGroup;
+			children = (
+				F298D1872BCE193E006B611A /* NavigationModifier.swift */,
+				F298D1892BCE1A58006B611A /* TabBarModifier.swift */,
+			);
+			path = CustomModifier;
+			sourceTree = "<group>";
+		};
 		F2E01B762BC8C5FE004CA206 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +94,7 @@
 				F2E01B922BC8C644004CA206 /* Extensions */,
 				F2E01B912BC8C643004CA206 /* Models */,
 				F2E01B902BC8C63A004CA206 /* Services */,
+				F298D1862BCE1925006B611A /* CustomModifier */,
 			);
 			path = InstagramWithSwiftUI;
 			sourceTree = "<group>";
@@ -169,6 +184,7 @@
 		F2E01B992BC8C6CB004CA206 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F2C8F6E32BCE30E400340BF6 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -316,8 +332,10 @@
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
 				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
 				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
+				F298D1882BCE193E006B611A /* NavigationModifier.swift in Sources */,
 				F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */,
 				F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */,
+				F298D18A2BCE1A58006B611A /* TabBarModifier.swift in Sources */,
 				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

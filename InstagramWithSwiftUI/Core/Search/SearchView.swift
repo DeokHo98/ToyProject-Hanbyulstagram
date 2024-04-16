@@ -16,7 +16,7 @@ struct SearchView: View {
             VStack {
                 ScrollView {
                     LazyVStack {
-                        ForEach(1...20, id: \.self) { count in
+                        ForEach(1...20, id: \.self) { _ in
                             HStack {
                                 Image("Hanbyoul")
                                     .resizable()
