@@ -18,15 +18,13 @@ struct FeedView: View {
                 }
                 .padding(.top, 10)
             }
-            .navigationTitle("피드")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(DefaultNavigation(title: "피드"))
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Text("Instagram")
                         .font(.headline)
                         .fontWeight(.bold)
                 }
-
                 ToolbarItem(placement: .topBarTrailing) {
                     Image(systemName: "paperplane")
                         .imageScale(.large)

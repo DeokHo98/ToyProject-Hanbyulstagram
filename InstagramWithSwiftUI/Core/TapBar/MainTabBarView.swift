@@ -14,17 +14,19 @@ struct MainTabBarView: View {
                 .tabItem {
                     Image(systemName: "house")
                 }
-            
-            Text("친구검색")
+                .modifier(DefaultTabBar())
+
+            SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
-            
+                .modifier(DefaultTabBar())
+
             Text("포스팅")
                 .tabItem {
                     Image(systemName: "plus")
                 }
-            
+
             Text("알림")
                 .tabItem {
                     Image(systemName: "heart")
@@ -34,6 +36,7 @@ struct MainTabBarView: View {
                 .tabItem {
                     Image(systemName: "person")
                 }
+                .modifier(DefaultTabBar())
         }
         .tint(Color(uiColor: .label))
     }
