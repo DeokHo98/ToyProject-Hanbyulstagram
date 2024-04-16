@@ -30,7 +30,7 @@ struct SetNickNameView: View {
              .clipShape(.rect(cornerRadius: 10))
              .padding(.horizontal, 24)
 
-        Button("사용하기") {
+        Button("가입하기") {
 
         }
         .font(.subheadline)

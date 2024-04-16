@@ -16,7 +16,7 @@
 		F2C8F6E72BCE35B800340BF6 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8F6E62BCE35B800340BF6 /* LogInView.swift */; };
 		F2C8F6ED2BCE3E9000340BF6 /* AppleLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8F6EC2BCE3E9000340BF6 /* AppleLoginButton.swift */; };
 		F2C8F6EF2BCE49DB00340BF6 /* SetNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8F6EE2BCE49DB00340BF6 /* SetNickNameView.swift */; };
-		F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */; };
+		F2E01B832BC8C5FE004CA206 /* HanbyulstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01B822BC8C5FE004CA206 /* HanbyulstagramApp.swift */; };
 		F2E01B872BC8C5FF004CA206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B862BC8C5FF004CA206 /* Assets.xcassets */; };
 		F2E01B8A2BC8C5FF004CA206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */; };
 		F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */; };
@@ -36,8 +36,8 @@
 		F2C8F6E62BCE35B800340BF6 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		F2C8F6EC2BCE3E9000340BF6 /* AppleLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginButton.swift; sourceTree = "<group>"; };
 		F2C8F6EE2BCE49DB00340BF6 /* SetNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNickNameView.swift; sourceTree = "<group>"; };
-		F2E01B7F2BC8C5FE004CA206 /* InstagramWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramWithSwiftUIApp.swift; sourceTree = "<group>"; };
+		F2E01B7F2BC8C5FE004CA206 /* Hanbyulstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hanbyulstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E01B822BC8C5FE004CA206 /* HanbyulstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanbyulstagramApp.swift; sourceTree = "<group>"; };
 		F2E01B862BC8C5FF004CA206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2E01B892BC8C5FF004CA206 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2E01BA52BC8CD7A004CA206 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		F2E01B762BC8C5FE004CA206 = {
 			isa = PBXGroup;
 			children = (
-				F2E01B812BC8C5FE004CA206 /* InstagramWithSwiftUI */,
+				F2E01B812BC8C5FE004CA206 /* Hanbyulstagram */,
 				F2E01B802BC8C5FE004CA206 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,12 +96,12 @@
 		F2E01B802BC8C5FE004CA206 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2E01B7F2BC8C5FE004CA206 /* InstagramWithSwiftUI.app */,
+				F2E01B7F2BC8C5FE004CA206 /* Hanbyulstagram.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2E01B812BC8C5FE004CA206 /* InstagramWithSwiftUI */ = {
+		F2E01B812BC8C5FE004CA206 /* Hanbyulstagram */ = {
 			isa = PBXGroup;
 			children = (
 				F2E01BA32BC8CBB4004CA206 /* Resource */,
@@ -112,7 +112,7 @@
 				F2E01B902BC8C63A004CA206 /* Services */,
 				F298D1862BCE1925006B611A /* CustomModifier */,
 			);
-			path = InstagramWithSwiftUI;
+			path = Hanbyulstagram;
 			sourceTree = "<group>";
 		};
 		F2E01B882BC8C5FF004CA206 /* Preview Content */ = {
@@ -161,7 +161,7 @@
 		F2E01B942BC8C648004CA206 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F2E01B822BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift */,
+				F2E01B822BC8C5FE004CA206 /* HanbyulstagramApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -277,9 +277,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2E01B7E2BC8C5FE004CA206 /* InstagramWithSwiftUI */ = {
+		F2E01B7E2BC8C5FE004CA206 /* Hanbyulstagram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2E01B8D2BC8C5FF004CA206 /* Build configuration list for PBXNativeTarget "InstagramWithSwiftUI" */;
+			buildConfigurationList = F2E01B8D2BC8C5FF004CA206 /* Build configuration list for PBXNativeTarget "Hanbyulstagram" */;
 			buildPhases = (
 				F2E01B7B2BC8C5FE004CA206 /* Sources */,
 				F2E01B7C2BC8C5FE004CA206 /* Frameworks */,
@@ -289,9 +289,9 @@
 			);
 			dependencies = (
 			);
-			name = InstagramWithSwiftUI;
-			productName = InstagramWithSwiftUI;
-			productReference = F2E01B7F2BC8C5FE004CA206 /* InstagramWithSwiftUI.app */;
+			name = Hanbyulstagram;
+			productName = Hanbyulstagram;
+			productReference = F2E01B7F2BC8C5FE004CA206 /* Hanbyulstagram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +309,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F2E01B7A2BC8C5FE004CA206 /* Build configuration list for PBXProject "InstagramWithSwiftUI" */;
+			buildConfigurationList = F2E01B7A2BC8C5FE004CA206 /* Build configuration list for PBXProject "Hanbyulstagram" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -322,7 +322,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2E01B7E2BC8C5FE004CA206 /* InstagramWithSwiftUI */,
+				F2E01B7E2BC8C5FE004CA206 /* Hanbyulstagram */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +346,7 @@
 			files = (
 				F298D17C2BCD010F006B611A /* FeedView.swift in Sources */,
 				F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */,
-				F2E01B832BC8C5FE004CA206 /* InstagramWithSwiftUIApp.swift in Sources */,
+				F2E01B832BC8C5FE004CA206 /* HanbyulstagramApp.swift in Sources */,
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
 				F2C8F6E52BCE35A700340BF6 /* SearchView.swift in Sources */,
 				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
@@ -491,7 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Hanbyulstagram/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -505,7 +505,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LoLInfoApp.InstagramWithSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = deokho.Hanbyulstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -520,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InstagramWithSwiftUI/Resource/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Hanbyulstagram/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -534,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LoLInfoApp.InstagramWithSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = deokho.Hanbyulstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -545,7 +545,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2E01B7A2BC8C5FE004CA206 /* Build configuration list for PBXProject "InstagramWithSwiftUI" */ = {
+		F2E01B7A2BC8C5FE004CA206 /* Build configuration list for PBXProject "Hanbyulstagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2E01B8B2BC8C5FF004CA206 /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2E01B8D2BC8C5FF004CA206 /* Build configuration list for PBXNativeTarget "InstagramWithSwiftUI" */ = {
+		F2E01B8D2BC8C5FF004CA206 /* Build configuration list for PBXNativeTarget "Hanbyulstagram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2E01B8E2BC8C5FF004CA206 /* Debug */,
