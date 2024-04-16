@@ -21,7 +21,7 @@ struct FeedView: View {
             .modifier(DefaultNavigation(title: "피드"))
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Text("Instagram")
+                    Text("Hanbyulstagram")
                         .font(.headline)
                         .fontWeight(.bold)
                 }

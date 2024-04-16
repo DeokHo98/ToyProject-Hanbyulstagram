@@ -11,7 +11,7 @@ struct FeedCell: View {
     var body: some View {
         VStack {
             HStack {
-                Image("Hanbyoul")
+                Image("한별이")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 45, height: 45)
