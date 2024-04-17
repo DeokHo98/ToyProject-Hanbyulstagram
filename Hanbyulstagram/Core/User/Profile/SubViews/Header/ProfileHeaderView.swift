@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
-    
+
+    let model: UserModel
+
     // MARK: - Constants
     
     private enum TextConstants {
@@ -23,7 +25,7 @@ struct ProfileHeaderView: View {
     var body: some View {
         VStack() {
             HStack {
-                Image("한별이")
+                Image(model.profileImageUrlString)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 100, height: 100)
@@ -40,13 +42,14 @@ struct ProfileHeaderView: View {
             .padding(.horizontal)
             
             VStack(alignment: .leading) {
-                Text("정한별")
+                Text(model.userName)
                     .font(.headline)
                     .fontWeight(.semibold)
                     .padding(.bottom, 5)
-
-                Text("월월월월월월월월월월월월월월월월월월월월")
-                    .font(.subheadline)
+                if let description = model.description {
+                    Text(description)
+                        .font(.subheadline)
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: 70, alignment: .leading)
             .padding(.horizontal)
@@ -72,5 +75,5 @@ struct ProfileHeaderView: View {
 }
 
 #Preview {
-    ProfileHeaderView()
+    ProfileHeaderView(model: UserModel.mockModels.first!)
 }

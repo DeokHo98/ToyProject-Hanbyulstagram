@@ -16,18 +16,18 @@ struct SearchView: View {
             VStack {
                 ScrollView {
                     LazyVStack {
-                        ForEach(1...20, id: \.self) { _ in
+                        ForEach(UserModel.mockModels, id: \.id) { model in
                             HStack {
-                                Image("한별이")
+                                Image(model.profileImageUrlString)
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 45, height: 45)
                                     .clipShape(.circle)
 
                                 VStack(alignment: .leading) {
-                                    Text("정한별")
+                                    Text(model.userName)
                                         .fontWeight(.semibold)
-                                    Text("월월월월월월월월월월월월월월월월월월월월월월월월월월월월")
+                                    Text(model.description ?? "")
                                 }
                                 .font(.subheadline)
                                 .frame(height: 0)

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ProfileView: View {
+
+    let model = UserModel.mockModels.last!
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack() {
-                    ProfileHeaderView()
+                    ProfileHeaderView(model: model)
                 }
                 .padding(.top, 5)
                 ProfileGridView()
