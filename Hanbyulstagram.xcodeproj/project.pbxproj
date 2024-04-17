@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F218930B2BCF836F00014584 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930A2BCF836F00014584 /* UserModel.swift */; };
+		F218930D2BCF87C200014584 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930C2BCF87C200014584 /* PostModel.swift */; };
+		F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930E2BCF8B4F00014584 /* DateExtension.swift */; };
+		F21893142BCF8FA600014584 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21893132BCF8FA600014584 /* PostView.swift */; };
+		F21893162BCF927E00014584 /* PostImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21893152BCF927E00014584 /* PostImageGridView.swift */; };
 		F298D17C2BCD010F006B611A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17B2BCD010F006B611A /* FeedView.swift */; };
 		F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17D2BCD0489006B611A /* FeedCell.swift */; };
 		F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */; };
@@ -25,10 +29,18 @@
 		F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BAB2BC8F5E1004CA206 /* ProfileView.swift */; };
 		F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BB22BC8FDE7004CA206 /* ProfileHeaderStatView.swift */; };
 		F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */; };
+		F2E86EB32BD08E4600AF4A20 /* PostNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E86EB22BD08E4600AF4A20 /* PostNextView.swift */; };
+		F2F4872F2BCFAB0C0074D80E /* PHAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F4872E2BCFAB0C0074D80E /* PHAsyncImage.swift */; };
+		F2F487322BCFAD8B0074D80E /* PHImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F487312BCFAD8B0074D80E /* PHImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F218930A2BCF836F00014584 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F218930C2BCF87C200014584 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = Hanbyulstagram/Core/User/PostModel.swift; sourceTree = SOURCE_ROOT; };
+		F218930E2BCF8B4F00014584 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Hanbyulstagram/Core/User/DateExtension.swift; sourceTree = SOURCE_ROOT; };
+		F21893132BCF8FA600014584 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F21893152BCF927E00014584 /* PostImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageGridView.swift; sourceTree = "<group>"; };
+		F21893172BCF979C00014584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F298D17B2BCD010F006B611A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F298D17D2BCD0489006B611A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBottomButton.swift; sourceTree = "<group>"; };
@@ -47,6 +59,9 @@
 		F2E01BAB2BC8F5E1004CA206 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F2E01BB22BC8FDE7004CA206 /* ProfileHeaderStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderStatView.swift; sourceTree = "<group>"; };
 		F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGridView.swift; sourceTree = "<group>"; };
+		F2E86EB22BD08E4600AF4A20 /* PostNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNextView.swift; sourceTree = "<group>"; };
+		F2F4872E2BCFAB0C0074D80E /* PHAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAsyncImage.swift; sourceTree = "<group>"; };
+		F2F487312BCFAD8B0074D80E /* PHImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +82,15 @@
 				F2E01BB02BC8FDCC004CA206 /* SubViews */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		F21893122BCF8F8700014584 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				F21893132BCF8FA600014584 /* PostView.swift */,
+				F2E86EB02BD08E1800AF4A20 /* SubViews */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		F298D17F2BCD048B006B611A /* SubViews */ = {
@@ -115,12 +139,14 @@
 		F2E01B812BC8C5FE004CA206 /* Hanbyulstagram */ = {
 			isa = PBXGroup;
 			children = (
+				F21893172BCF979C00014584 /* Info.plist */,
 				F2E01BA32BC8CBB4004CA206 /* Resource */,
 				F2E01B942BC8C648004CA206 /* App */,
 				F2E01B932BC8C646004CA206 /* Core */,
 				F2E01B922BC8C644004CA206 /* Extensions */,
 				F2E01B912BC8C643004CA206 /* Models */,
 				F2E01B902BC8C63A004CA206 /* Services */,
+				F2F487302BCFAD7D0074D80E /* Manager */,
 				F298D1862BCE1925006B611A /* CustomModifier */,
 			);
 			path = Hanbyulstagram;
@@ -151,6 +177,7 @@
 		F2E01B922BC8C644004CA206 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F218930E2BCF8B4F00014584 /* DateExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,6 +249,9 @@
 		F2E01B9A2BC8C6FE004CA206 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				F218930C2BCF87C200014584 /* PostModel.swift */,
+				F21893122BCF8F8700014584 /* Post */,
+				F2E86EB12BD08E2700AF4A20 /* PostNext */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -275,6 +305,31 @@
 				F2E01BB52BC8FF9F004CA206 /* ProfileGridView.swift */,
 			);
 			path = GridView;
+			sourceTree = "<group>";
+		};
+		F2E86EB02BD08E1800AF4A20 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F21893152BCF927E00014584 /* PostImageGridView.swift */,
+				F2F4872E2BCFAB0C0074D80E /* PHAsyncImage.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F2E86EB12BD08E2700AF4A20 /* PostNext */ = {
+			isa = PBXGroup;
+			children = (
+				F2E86EB22BD08E4600AF4A20 /* PostNextView.swift */,
+			);
+			path = PostNext;
+			sourceTree = "<group>";
+		};
+		F2F487302BCFAD7D0074D80E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F2F487312BCFAD8B0074D80E /* PHImageManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,18 +405,25 @@
 				F298D17C2BCD010F006B611A /* FeedView.swift in Sources */,
 				F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */,
 				F2E01B832BC8C5FE004CA206 /* HanbyulstagramApp.swift in Sources */,
+				F2E86EB32BD08E4600AF4A20 /* PostNextView.swift in Sources */,
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
+				F218930D2BCF87C200014584 /* PostModel.swift in Sources */,
 				F2C8F6E52BCE35A700340BF6 /* SearchView.swift in Sources */,
 				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
+				F2F487322BCFAD8B0074D80E /* PHImageManager.swift in Sources */,
 				F2C8F6ED2BCE3E9000340BF6 /* AppleLoginButton.swift in Sources */,
 				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
 				F218930B2BCF836F00014584 /* UserModel.swift in Sources */,
+				F2F4872F2BCFAB0C0074D80E /* PHAsyncImage.swift in Sources */,
 				F298D1882BCE193E006B611A /* NavigationModifier.swift in Sources */,
 				F2C8F6EF2BCE49DB00340BF6 /* SetNickNameView.swift in Sources */,
+				F21893162BCF927E00014584 /* PostImageGridView.swift in Sources */,
 				F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */,
+				F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */,
 				F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */,
 				F298D18A2BCE1A58006B611A /* TabBarModifier.swift in Sources */,
 				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
+				F21893142BCF8FA600014584 /* PostView.swift in Sources */,
 				F2C8F6E72BCE35B800340BF6 /* LogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +561,8 @@
 				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hanbyulstagram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진을 게시할때 사진첩에 접근해야합니다. 권한을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -528,6 +592,8 @@
 				DEVELOPMENT_TEAM = V53Z7HF8ZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hanbyulstagram/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사진을 게시할때 사진첩에 접근해야합니다. 권한을 허용하시겠습니까?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

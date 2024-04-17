@@ -22,10 +22,11 @@ struct MainTabBarView: View {
                 }
                 .modifier(DefaultTabBar())
 
-            Text("포스팅")
+            PostView()
                 .tabItem {
                     Image(systemName: "plus")
                 }
+                .modifier(DefaultTabBar())
 
             Text("알림")
                 .tabItem {

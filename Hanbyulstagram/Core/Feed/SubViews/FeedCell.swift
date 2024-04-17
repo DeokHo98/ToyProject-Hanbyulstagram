@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FeedCell: View {
 
+    let model: PostModel
+
     @State private var showMoreText = false {
         didSet {
             lineLimit = true
@@ -20,13 +22,13 @@ struct FeedCell: View {
     var body: some View {
         VStack {
             HStack {
-                Image("한별이")
+                Image(model.userImageUrl)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 45, height: 45)
                     .clipShape(.circle)
 
-                Text("정한별")
+                Text(model.userName)
                     .font(.subheadline)
                     .fontWeight(.semibold)
 
@@ -34,7 +36,7 @@ struct FeedCell: View {
             }
             .padding(.leading, 10)
 
-            Image("background")
+            Image(model.feedImageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -49,18 +51,17 @@ struct FeedCell: View {
             .padding(.leading, 8)
             .padding(.top, 4)
 
-            Text("좋아요 23개")
+            Text("좋아요 \(model.likesCount)개")
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 10)
                 .padding(.top, 1)
 
-
             ZStack(alignment: .bottomTrailing) {
                 HStack {
-                    let nameText = Text("정한별").fontWeight(.semibold)
-                    let postText = Text("모든 텍스트를 배치할 수 있으므로 ContentView높이는 가변적이므로 콘텐츠 주변의 항목이 올바르게 배치되도록 이를 계산해야 합니다. 이 높이 계산이 어떻게 작동하는지 궁금하다면 Majid가 포함된 Swift에 훌륭한 설명이 있습니다 .이제 실제로 뷰를 레이아웃해야 합니다 ZStack. 해당 코드는 다음과 같습니다. 와! 그것을 분석해 봅시다. 먼저 우리는 zStackViews(_:)메소드 호출을 우리의 ZStack및 정의에 추가합니다 zStackViews(_:). 내에서 zStackViews19행의 현재 수평 및 수직 위치를 추적합니다. 그런 다음 함수 ForEach에 의해 생성된 콘텐츠가 포함된 뷰를 반환합니다 forEachView(_:). forEachView단일 ContentText또는 Link보기에 대한 레이아웃을 생성합니다.")
+                    let nameText = Text(model.userName).fontWeight(.semibold)
+                    let postText = Text(model.caption)
 
                     (nameText + Text(" ") + postText)
                     .lineLimit(lineLimit ? 2 : nil)
@@ -100,7 +101,7 @@ struct FeedCell: View {
             .padding(.top, 1)
 
 
-            Text("1분 전")
+            Text(model.timestamp.timeAgoSinceDate())
                 .font(.subheadline)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 10)
@@ -111,5 +112,5 @@ struct FeedCell: View {
 }
 
 #Preview {
-    FeedCell()
+    FeedCell(model: PostModel.mockModels.first!)
 }

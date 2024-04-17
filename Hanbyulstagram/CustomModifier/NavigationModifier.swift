@@ -19,3 +19,26 @@ struct DefaultNavigation: ViewModifier {
             .navigationBarTitleDisplayMode(.inline)
     }
 }
+
+struct BackButton: ViewModifier {
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    func body(content: Content) -> some View {
+        content
+            .navigationBarBackButtonHidden()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button{
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        HStack {
+                            Image(systemName: "chevron.left") // 화살표 Image
+                                .aspectRatio(contentMode: .fit)
+                            Text("뒤로가기")
+                        }
+                    }
+                }
+            }
+    }
+}
