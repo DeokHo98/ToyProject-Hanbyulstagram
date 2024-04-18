@@ -7,11 +7,7 @@
 
 import SwiftUI
 
-final class WindowIsLoading: ObservableObject {
-    static let shared = WindowIsLoading()
 
-    @Published var isLoading: Bool = false
-}
 
 
 struct CustomLoadingView: View {

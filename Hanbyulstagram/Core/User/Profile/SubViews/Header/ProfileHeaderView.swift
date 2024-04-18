@@ -25,7 +25,7 @@ struct ProfileHeaderView: View {
     var body: some View {
         VStack() {
             HStack {
-                Image(model.profileImageUrlString)
+                Image(model.profileImageUrlString ?? "")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 100, height: 100)
@@ -66,7 +66,6 @@ struct ProfileHeaderView: View {
                     .overlay {
                         RoundedRectangle(cornerRadius: 6).stroke(.gray, lineWidth: 1)
                     }
-                
             }
             
             Divider()

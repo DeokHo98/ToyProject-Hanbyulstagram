@@ -17,18 +17,32 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
+final class WindowProperty: ObservableObject {
+    static let shared = WindowProperty()
 
+    @Published var isLoading: Bool = false
+    @Published var isLogin: Bool = false
+
+    init() {
+        self.isLoading = false
+        self.isLogin = UserDefaultsManager.isLogin
+    }
+}
 
 @main
 struct InstagramWithSwiftUIApp: App {
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var windowProperty = WindowIsLoading.shared
+    @StateObject var windowProperty = WindowProperty.shared
 
     var body: some Scene {
         WindowGroup {
             ZStack {
-                MainTabBarView()
+                if windowProperty.isLogin {
+                    MainTabBarView()
+                } else {
+                    LogInView()
+                }
                 if windowProperty.isLoading {
                     CustomLoadingView()
                 }

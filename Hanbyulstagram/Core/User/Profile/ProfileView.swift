@@ -23,11 +23,20 @@ struct ProfileView: View {
             }
             .modifier(DefaultNavigation(title: "프로필"))
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        WindowProperty.shared.isLogin = false
+                        UserDefaultsManager.isLogin = false
+                        UserDefaultsManager.userIdentifier = ""
+                    } label: {
+                        Text("로그아웃")
+                    }
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                     } label: {
                         Image(systemName: "line.3.horizontal")
-                            .foregroundStyle(.black)
+                            .foregroundStyle(Color(uiColor: .label))
                     }
                 }
             }

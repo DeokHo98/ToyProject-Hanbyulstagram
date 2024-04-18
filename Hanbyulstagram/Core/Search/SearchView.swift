@@ -18,7 +18,7 @@ struct SearchView: View {
                     LazyVStack {
                         ForEach(UserModel.mockModels, id: \.id) { model in
                             HStack {
-                                Image(model.profileImageUrlString)
+                                Image(model.profileImageUrlString ?? "")
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 45, height: 45)

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct LogInView: View {
 
+    @State private var moveSetNickNameView = false
+    @State private var model: AppleSignInModel?
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -22,9 +25,12 @@ struct LogInView: View {
                     .fontWeight(.bold)
                     .padding(.bottom, 20)
 
-                AppleLoginButton()
+                AppleLoginButton(moveSetNickNameView: $moveSetNickNameView, model: $model)
                 Spacer()
                 Divider().padding()
+            }
+            .navigationDestination(isPresented: $moveSetNickNameView) {
+                SetNickNameView(model: $model)
             }
         }
     }

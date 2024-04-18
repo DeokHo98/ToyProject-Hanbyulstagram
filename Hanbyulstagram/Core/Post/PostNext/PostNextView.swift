@@ -46,7 +46,7 @@ struct PostNextView: View {
                             .padding(.top, 20)
 
                         Button {
-                            WindowIsLoading.shared.isLoading = true
+                            WindowProperty.shared.isLoading = true
                         } label: {
                             Text("공유")
                                 .frame(maxWidth: .infinity)
