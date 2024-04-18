@@ -35,6 +35,7 @@ struct BackButton: ViewModifier {
                         HStack {
                             Image(systemName: "chevron.left") // 화살표 Image
                                 .aspectRatio(contentMode: .fit)
+                                .padding(.trailing, -5)
                             Text("뒤로가기")
                         }
                     }

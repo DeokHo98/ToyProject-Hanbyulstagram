@@ -41,6 +41,9 @@ struct PostImageGridView: View {
                 }
             }
         }
+        .onDisappear {
+            imageList = []
+        }
     }
 
     private func fetchPhotoList() {
