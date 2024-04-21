@@ -12,6 +12,10 @@
 		F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930E2BCF8B4F00014584 /* DateExtension.swift */; };
 		F21893142BCF8FA600014584 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21893132BCF8FA600014584 /* PostView.swift */; };
 		F21893162BCF927E00014584 /* PostImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21893152BCF927E00014584 /* PostImageGridView.swift */; };
+		F22873012BD5D17800D7AE39 /* AppleSignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22872FD2BD5D17800D7AE39 /* AppleSignInError.swift */; };
+		F22873022BD5D17800D7AE39 /* AppleUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22872FE2BD5D17800D7AE39 /* AppleUserEntity.swift */; };
+		F22873032BD5D17800D7AE39 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22872FF2BD5D17800D7AE39 /* AppleSignInManager.swift */; };
+		F22873042BD5D17800D7AE39 /* AppleSignInManagerDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22873002BD5D17800D7AE39 /* AppleSignInManagerDependency.swift */; };
 		F233F15F2BD0A0A200977970 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F233F15E2BD0A0A200977970 /* FirebaseAnalytics */; };
 		F233F1612BD0A0A200977970 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F233F1602BD0A0A200977970 /* FirebaseAnalyticsOnDeviceConversion */; };
 		F233F1632BD0A0A200977970 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F233F1622BD0A0A200977970 /* FirebaseAnalyticsSwift */; };
@@ -47,10 +51,6 @@
 		F260E8EC2BD0F05400D9105F /* FireBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8EB2BD0F05400D9105F /* FireBaseRepository.swift */; };
 		F260E8EE2BD0F50A00D9105F /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8ED2BD0F50A00D9105F /* AuthenticationRepository.swift */; };
 		F260E8F02BD0FBF800D9105F /* FireBaseCollectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8EF2BD0FBF800D9105F /* FireBaseCollectionKey.swift */; };
-		F260E8FE2BD5D05E00D9105F /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8FA2BD5D05E00D9105F /* AppleSignInManager.swift */; };
-		F260E8FF2BD5D05E00D9105F /* AppleUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8FB2BD5D05E00D9105F /* AppleUserEntity.swift */; };
-		F260E9002BD5D05E00D9105F /* AppleSignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8FC2BD5D05E00D9105F /* AppleSignInError.swift */; };
-		F260E9012BD5D05E00D9105F /* AppleSignInManagerDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8FD2BD5D05E00D9105F /* AppleSignInManagerDependency.swift */; };
 		F298D17C2BCD010F006B611A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17B2BCD010F006B611A /* FeedView.swift */; };
 		F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17D2BCD0489006B611A /* FeedCell.swift */; };
 		F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */; };
@@ -80,6 +80,10 @@
 		F21893132BCF8FA600014584 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		F21893152BCF927E00014584 /* PostImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageGridView.swift; sourceTree = "<group>"; };
 		F21893172BCF979C00014584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22872FD2BD5D17800D7AE39 /* AppleSignInError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInError.swift; sourceTree = "<group>"; };
+		F22872FE2BD5D17800D7AE39 /* AppleUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleUserEntity.swift; sourceTree = "<group>"; };
+		F22872FF2BD5D17800D7AE39 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
+		F22873002BD5D17800D7AE39 /* AppleSignInManagerDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManagerDependency.swift; sourceTree = "<group>"; };
 		F233F1952BD0A24400977970 /* CustomLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
 		F233F1A02BD0D57200977970 /* Hanbyulstagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hanbyulstagram.entitlements; sourceTree = "<group>"; };
 		F233F1A32BD0D76600977970 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -89,10 +93,6 @@
 		F260E8EB2BD0F05400D9105F /* FireBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRepository.swift; sourceTree = "<group>"; };
 		F260E8ED2BD0F50A00D9105F /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		F260E8EF2BD0FBF800D9105F /* FireBaseCollectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseCollectionKey.swift; sourceTree = "<group>"; };
-		F260E8FA2BD5D05E00D9105F /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppleSignInManager.swift; path = ../../../../AppleSignInManager.swift; sourceTree = "<group>"; };
-		F260E8FB2BD5D05E00D9105F /* AppleUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppleUserEntity.swift; path = ../../../../AppleUserEntity.swift; sourceTree = "<group>"; };
-		F260E8FC2BD5D05E00D9105F /* AppleSignInError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppleSignInError.swift; path = ../../../../AppleSignInError.swift; sourceTree = "<group>"; };
-		F260E8FD2BD5D05E00D9105F /* AppleSignInManagerDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppleSignInManagerDependency.swift; path = ../../../../AppleSignInManagerDependency.swift; sourceTree = "<group>"; };
 		F298D17B2BCD010F006B611A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F298D17D2BCD0489006B611A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBottomButton.swift; sourceTree = "<group>"; };
@@ -172,6 +172,17 @@
 			path = Post;
 			sourceTree = "<group>";
 		};
+		F22872FC2BD5D12B00D7AE39 /* AppleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F22872FD2BD5D17800D7AE39 /* AppleSignInError.swift */,
+				F22872FF2BD5D17800D7AE39 /* AppleSignInManager.swift */,
+				F22873002BD5D17800D7AE39 /* AppleSignInManagerDependency.swift */,
+				F22872FE2BD5D17800D7AE39 /* AppleUserEntity.swift */,
+			);
+			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
 		F233F1942BD0A23200977970 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,17 +208,6 @@
 				F260E8EF2BD0FBF800D9105F /* FireBaseCollectionKey.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		F260E8F92BD5D02000D9105F /* AppleSignIn */ = {
-			isa = PBXGroup;
-			children = (
-				F260E8FC2BD5D05E00D9105F /* AppleSignInError.swift */,
-				F260E8FA2BD5D05E00D9105F /* AppleSignInManager.swift */,
-				F260E8FD2BD5D05E00D9105F /* AppleSignInManagerDependency.swift */,
-				F260E8FB2BD5D05E00D9105F /* AppleUserEntity.swift */,
-			);
-			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
 		F298D17F2BCD048B006B611A /* SubViews */ = {
@@ -441,7 +441,7 @@
 		F2F487302BCFAD7D0074D80E /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F260E8F92BD5D02000D9105F /* AppleSignIn */,
+				F22872FC2BD5D12B00D7AE39 /* AppleSignIn */,
 				F260E8E32BD0ED2300D9105F /* UserDefaults */,
 				F2F487312BCFAD8B0074D80E /* PHImageManager.swift */,
 			);
@@ -554,21 +554,20 @@
 				F298D17C2BCD010F006B611A /* FeedView.swift in Sources */,
 				F2E01BAD2BC8F5E1004CA206 /* ProfileView.swift in Sources */,
 				F260E8E92BD0EE3C00D9105F /* UserDefaultManager.swift in Sources */,
-				F260E9012BD5D05E00D9105F /* AppleSignInManagerDependency.swift in Sources */,
+				F22873042BD5D17800D7AE39 /* AppleSignInManagerDependency.swift in Sources */,
 				F260E8E52BD0ED5400D9105F /* UserDefaultsPropertyWrapper.swift in Sources */,
 				F2E01B832BC8C5FE004CA206 /* HanbyulstagramApp.swift in Sources */,
 				F2E86EB32BD08E4600AF4A20 /* PostNextView.swift in Sources */,
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
-				F260E8FE2BD5D05E00D9105F /* AppleSignInManager.swift in Sources */,
 				F233F1962BD0A24400977970 /* CustomLoadingView.swift in Sources */,
 				F218930D2BCF87C200014584 /* PostModel.swift in Sources */,
 				F2C8F6E52BCE35A700340BF6 /* SearchView.swift in Sources */,
+				F22873012BD5D17800D7AE39 /* AppleSignInError.swift in Sources */,
 				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
 				F260E8EE2BD0F50A00D9105F /* AuthenticationRepository.swift in Sources */,
 				F2F487322BCFAD8B0074D80E /* PHImageManager.swift in Sources */,
 				F2C8F6ED2BCE3E9000340BF6 /* AppleLoginButton.swift in Sources */,
 				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
-				F260E9002BD5D05E00D9105F /* AppleSignInError.swift in Sources */,
 				F218930B2BCF836F00014584 /* UserModel.swift in Sources */,
 				F2F4872F2BCFAB0C0074D80E /* PHAsyncImage.swift in Sources */,
 				F298D1882BCE193E006B611A /* NavigationModifier.swift in Sources */,
@@ -581,9 +580,10 @@
 				F260E8F02BD0FBF800D9105F /* FireBaseCollectionKey.swift in Sources */,
 				F298D18A2BCE1A58006B611A /* TabBarModifier.swift in Sources */,
 				F2E01BA62BC8CD7A004CA206 /* MainTabBarView.swift in Sources */,
+				F22873032BD5D17800D7AE39 /* AppleSignInManager.swift in Sources */,
 				F21893142BCF8FA600014584 /* PostView.swift in Sources */,
 				F260E8E72BD0ED7700D9105F /* UserDefaultKey.swift in Sources */,
-				F260E8FF2BD5D05E00D9105F /* AppleUserEntity.swift in Sources */,
+				F22873022BD5D17800D7AE39 /* AppleUserEntity.swift in Sources */,
 				F2C8F6E72BCE35B800340BF6 /* LogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
