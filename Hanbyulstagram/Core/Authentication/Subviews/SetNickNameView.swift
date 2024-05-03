@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SetNickNameView: View {
 
+    var windowProperty = WindowProperty.shared
+
     @State private var nickName: String = ""
     @State private var showAlert = false
     @State private var alertMessage = ""
@@ -36,7 +38,8 @@ struct SetNickNameView: View {
              .padding(.horizontal, 24)
 
         Button {
-            WindowProperty.shared.isLoading = true
+            windowProperty.isLoading = true
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             login()
         } label: {
             Text("가입하기")
@@ -59,21 +62,17 @@ struct SetNickNameView: View {
         Task {
             do {
                 try await repository.setUserData(model: model)
-                WindowProperty.shared.isLoading = false
-                WindowProperty.shared.isLogin = true
+                windowProperty.isLoading = false
+                windowProperty.isLoggedIn = true
+
                 UserDefaultsManager.userIdentifier = model.id
                 UserDefaultsManager.isLogin = true
             } catch let error {
                 alertMessage = error.localizedDescription
-                WindowProperty.shared.isLoading = false
+                windowProperty.isLoading = false
                 showAlert = true
             }
         }
 
     }
-}
-
-#Preview {
-    @State var model: AppleSignInModel? = nil
-    return SetNickNameView(model: $model)
 }

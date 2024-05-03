@@ -17,28 +17,26 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
-final class WindowProperty: ObservableObject {
+@Observable
+class WindowProperty: ObservableObject {
     static let shared = WindowProperty()
 
-    @Published var isLoading: Bool = false
-    @Published var isLogin: Bool = false
+    var isLoggedIn = false
+    var isLoading = false
 
-    init() {
-        self.isLoading = false
-        self.isLogin = UserDefaultsManager.isLogin
-    }
+    private init() {} // 외부에서 인스턴스 생성 방지
 }
 
 @main
 struct InstagramWithSwiftUIApp: App {
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var windowProperty = WindowProperty.shared
+    var windowProperty = WindowProperty.shared
 
     var body: some Scene {
         WindowGroup {
             ZStack {
-                if windowProperty.isLogin {
+                if windowProperty.isLoggedIn || UserDefaultsManager.isLogin {
                     MainTabBarView()
                 } else {
                     LogInView()
@@ -47,7 +45,6 @@ struct InstagramWithSwiftUIApp: App {
                     CustomLoadingView()
                 }
             }
-            .environmentObject(windowProperty)
         }
     }
 }

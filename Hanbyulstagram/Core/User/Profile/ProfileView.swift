@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
 
+    var windowProperty = WindowProperty.shared
+
     let model = UserModel.mockModels.last!
 
     var body: some View {
@@ -25,7 +27,7 @@ struct ProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        WindowProperty.shared.isLogin = false
+                        windowProperty.isLoggedIn = false
                         UserDefaultsManager.isLogin = false
                         UserDefaultsManager.userIdentifier = ""
                     } label: {

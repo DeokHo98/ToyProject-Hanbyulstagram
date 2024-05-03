@@ -32,6 +32,7 @@ struct LogInView: View {
             .navigationDestination(isPresented: $moveSetNickNameView) {
                 SetNickNameView(model: $model)
             }
+
         }
     }
 }

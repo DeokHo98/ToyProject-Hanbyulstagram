@@ -11,6 +11,8 @@ import FirebaseFirestore
 
 struct AppleLoginButton: View {
 
+    var windowProperty = WindowProperty.shared
+
     private let appleSignInManager: AppleSignInManagerDependency = AppleSignInManager()
 
     @Binding var moveSetNickNameView: Bool
@@ -41,11 +43,11 @@ struct AppleLoginButton: View {
             Alert(title: Text(alertMessage), dismissButton: .default(Text("확인")))
         }
         .onTapGesture {
-            WindowProperty.shared.isLoading = true
+            windowProperty.isLoading = true
             appleSignInManager.startSignIn()
         }
         .onReceive(appleSignInManager.didFailSignIn) { error in
-            WindowProperty.shared.isLoading = false
+            windowProperty.isLoading = false
             alertMessage = error.localizedDescription
             showAlert = true
         }
@@ -58,17 +60,12 @@ struct AppleLoginButton: View {
                 } else if snapShot != nil {
                     UserDefaultsManager.isLogin = true
                     UserDefaultsManager.userIdentifier = model.userIdentifier
-                    WindowProperty.shared.isLogin = true
+                    windowProperty.isLoggedIn = true
                 }
-                WindowProperty.shared.isLoading = false
+                windowProperty.isLoading = false
             }
 
         }
     }
 }
 
-#Preview {
-    @State var moveSetNickNameView: Bool = false
-    @State var userModel: AppleSignInModel? = nil
-    return AppleLoginButton(moveSetNickNameView: $moveSetNickNameView, model: $userModel)
-}
