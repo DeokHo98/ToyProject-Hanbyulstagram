@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2011B062BE4CCA000A8527A /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */; };
+		F2011B092BE4CE9500A8527A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F2011B082BE4CE9500A8527A /* ComposableArchitecture */; };
 		F218930B2BCF836F00014584 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930A2BCF836F00014584 /* UserModel.swift */; };
 		F218930D2BCF87C200014584 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930C2BCF87C200014584 /* PostModel.swift */; };
 		F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930E2BCF8B4F00014584 /* DateExtension.swift */; };
@@ -125,6 +126,7 @@
 			files = (
 				F233F1712BD0A0A200977970 /* FirebaseDatabase in Frameworks */,
 				F233F17F2BD0A0A200977970 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				F2011B092BE4CE9500A8527A /* ComposableArchitecture in Frameworks */,
 				F233F1772BD0A0A200977970 /* FirebaseFirestore in Frameworks */,
 				F233F1632BD0A0A200977970 /* FirebaseAnalyticsSwift in Frameworks */,
 				F233F15F2BD0A0A200977970 /* FirebaseAnalytics in Frameworks */,
@@ -479,6 +481,7 @@
 				F233F18E2BD0A0A200977970 /* FirebaseRemoteConfigSwift */,
 				F233F1902BD0A0A200977970 /* FirebaseStorage */,
 				F233F1922BD0A0A200977970 /* FirebaseStorageCombine-Community */,
+				F2011B082BE4CE9500A8527A /* ComposableArchitecture */,
 			);
 			productName = Hanbyulstagram;
 			productReference = F2E01B7F2BC8C5FE004CA206 /* Hanbyulstagram.app */;
@@ -510,6 +513,7 @@
 			mainGroup = F2E01B762BC8C5FE004CA206;
 			packageReferences = (
 				F233F15D2BD0A0A200977970 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F2011B072BE4CE9500A8527A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = F2E01B802BC8C5FE004CA206 /* Products */;
 			projectDirPath = "";
@@ -786,6 +790,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F2011B072BE4CE9500A8527A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.2;
+			};
+		};
 		F233F15D2BD0A0A200977970 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -797,6 +809,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F2011B082BE4CE9500A8527A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2011B072BE4CE9500A8527A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
 		F233F15E2BD0A0A200977970 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F233F15D2BD0A0A200977970 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
