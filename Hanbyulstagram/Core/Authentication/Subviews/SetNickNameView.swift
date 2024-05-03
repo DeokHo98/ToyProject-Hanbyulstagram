@@ -39,7 +39,7 @@ struct SetNickNameView: View {
 
         Button {
             windowProperty.isLoading = true
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            UIApplication.endTextEditing()
             login()
         } label: {
             Text("가입하기")

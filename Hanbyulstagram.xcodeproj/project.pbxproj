@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2011B062BE4CCA000A8527A /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */; };
 		F218930B2BCF836F00014584 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930A2BCF836F00014584 /* UserModel.swift */; };
 		F218930D2BCF87C200014584 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930C2BCF87C200014584 /* PostModel.swift */; };
 		F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930E2BCF8B4F00014584 /* DateExtension.swift */; };
@@ -74,9 +75,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		F218930A2BCF836F00014584 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F218930C2BCF87C200014584 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = Hanbyulstagram/Core/User/PostModel.swift; sourceTree = SOURCE_ROOT; };
-		F218930E2BCF8B4F00014584 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Hanbyulstagram/Core/User/DateExtension.swift; sourceTree = SOURCE_ROOT; };
+		F218930E2BCF8B4F00014584 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Hanbyulstagram/Extension/DateExtension.swift; sourceTree = SOURCE_ROOT; };
 		F21893132BCF8FA600014584 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		F21893152BCF927E00014584 /* PostImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageGridView.swift; sourceTree = "<group>"; };
 		F21893172BCF979C00014584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,6 +156,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2011B042BE4CC6200A8527A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F218930E2BCF8B4F00014584 /* DateExtension.swift */,
+				F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F21893062BCF81FE00014584 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,12 +271,11 @@
 				F2E01BA32BC8CBB4004CA206 /* Resource */,
 				F2E01B942BC8C648004CA206 /* App */,
 				F2E01B932BC8C646004CA206 /* Core */,
-				F2E01B922BC8C644004CA206 /* Extensions */,
-				F2E01B912BC8C643004CA206 /* Models */,
 				F260E8EA2BD0F03900D9105F /* Repository */,
 				F2F487302BCFAD7D0074D80E /* Manager */,
 				F233F1942BD0A23200977970 /* CommonView */,
 				F298D1862BCE1925006B611A /* CommonModifier */,
+				F2011B042BE4CC6200A8527A /* Extension */,
 			);
 			path = Hanbyulstagram;
 			sourceTree = "<group>";
@@ -278,21 +288,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F2E01B912BC8C643004CA206 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F2E01B922BC8C644004CA206 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F218930E2BCF8B4F00014584 /* DateExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		F2E01B932BC8C646004CA206 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +295,6 @@
 				F2E01B972BC8C6B6004CA206 /* Feed */,
 				F2E01B962BC8C6A9004CA206 /* User */,
 				F2E01B9A2BC8C6FE004CA206 /* Post */,
-				F2E01B982BC8C6C6004CA206 /* Root */,
 				F2E01B992BC8C6CB004CA206 /* Search */,
 				F2E01B9B2BC8C72B004CA206 /* TapBar */,
 			);
@@ -341,13 +335,6 @@
 				F298D17F2BCD048B006B611A /* SubViews */,
 			);
 			path = Feed;
-			sourceTree = "<group>";
-		};
-		F2E01B982BC8C6C6004CA206 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		F2E01B992BC8C6CB004CA206 /* Search */ = {
@@ -563,6 +550,7 @@
 				F218930D2BCF87C200014584 /* PostModel.swift in Sources */,
 				F2C8F6E52BCE35A700340BF6 /* SearchView.swift in Sources */,
 				F22873012BD5D17800D7AE39 /* AppleSignInError.swift in Sources */,
+				F2011B062BE4CCA000A8527A /* UIApplicationExtension.swift in Sources */,
 				F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */,
 				F260E8EE2BD0F50A00D9105F /* AuthenticationRepository.swift in Sources */,
 				F2F487322BCFAD8B0074D80E /* PHImageManager.swift in Sources */,
