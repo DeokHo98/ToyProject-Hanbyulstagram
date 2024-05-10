@@ -8,13 +8,23 @@
 import Foundation
 
 protocol AuthenticationRepositoryDependency: FireBaseRepository {
-    func setUserData(model: UserModel) async throws -> Void
+    func setUserData(DTO: UserDTO) async throws -> Void
+    func invalidUser(identifier: String) async -> Bool
 }
 
 struct AuthenticationRepository: AuthenticationRepositoryDependency {
-    func setUserData(model: UserModel) async throws -> Void {
-        return try await setData(collection: .user,
-                                 document: model.id,
-                                 data: model.toData())
+    func setUserData(DTO: UserDTO) async throws -> Void {
+        return try await setData(collectionKey: .user,
+                                 documentValue: DTO.id,
+                                 data: DTO.toData())
+    }
+
+    func invalidUser(identifier: String) async -> Bool {
+        do {
+            let snapShot = try await getSnapShot(collectionKey: .user, documentValue: identifier)
+            return snapShot.exists
+        } catch {
+            return false
+        }
     }
 }

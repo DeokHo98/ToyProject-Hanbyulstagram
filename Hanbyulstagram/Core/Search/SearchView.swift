@@ -16,7 +16,7 @@ struct SearchView: View {
             VStack {
                 ScrollView {
                     LazyVStack {
-                        ForEach(UserModel.mockModels, id: \.id) { model in
+                        ForEach(UserDTO.mockModels, id: \.id) { model in
                             HStack {
                                 Image(model.profileImageUrlString ?? "")
                                     .resizable()

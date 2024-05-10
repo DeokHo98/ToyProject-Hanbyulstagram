@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
 
-    let model: UserModel
+    let model: UserDTO
 
     // MARK: - Constants
     
@@ -74,5 +74,5 @@ struct ProfileHeaderView: View {
 }
 
 #Preview {
-    ProfileHeaderView(model: UserModel.mockModels.first!)
+    ProfileHeaderView(model: UserDTO.mockModels.first!)
 }

@@ -16,6 +16,7 @@ struct CustomLoadingView: View {
         ZStack {
             Rectangle()
                 .foregroundStyle(Color(uiColor: .systemBackground.withAlphaComponent(0.5)))
+                .edgesIgnoringSafeArea(.all) // SafeArea를 무시하도록 수정
 
             Circle()
                 .stroke(Color(uiColor: .systemBackground.withAlphaComponent(0.5)), lineWidth: lineWidth)
@@ -38,8 +39,4 @@ struct CustomLoadingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-}
-
-#Preview {
-    CustomLoadingView()
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F2011B062BE4CCA000A8527A /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */; };
 		F2011B092BE4CE9500A8527A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F2011B082BE4CE9500A8527A /* ComposableArchitecture */; };
-		F218930B2BCF836F00014584 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930A2BCF836F00014584 /* UserModel.swift */; };
+		F218930B2BCF836F00014584 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930A2BCF836F00014584 /* UserDTO.swift */; };
 		F218930D2BCF87C200014584 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930C2BCF87C200014584 /* PostModel.swift */; };
 		F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218930E2BCF8B4F00014584 /* DateExtension.swift */; };
 		F21893142BCF8FA600014584 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21893132BCF8FA600014584 /* PostView.swift */; };
@@ -53,6 +53,10 @@
 		F260E8EC2BD0F05400D9105F /* FireBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8EB2BD0F05400D9105F /* FireBaseRepository.swift */; };
 		F260E8EE2BD0F50A00D9105F /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8ED2BD0F50A00D9105F /* AuthenticationRepository.swift */; };
 		F260E8F02BD0FBF800D9105F /* FireBaseCollectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260E8EF2BD0FBF800D9105F /* FireBaseCollectionKey.swift */; };
+		F295AA442BEC97F00068434F /* LoginFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295AA432BEC97F00068434F /* LoginFeature.swift */; };
+		F295AA482BEC98C70068434F /* AppleLoginFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295AA472BEC98C70068434F /* AppleLoginFeature.swift */; };
+		F295AA4A2BED9DD50068434F /* SetNickNameFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295AA492BED9DD50068434F /* SetNickNameFeature.swift */; };
+		F295AA4C2BEDA5F60068434F /* TCA_AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295AA4B2BEDA5F60068434F /* TCA_AlertExtension.swift */; };
 		F298D17C2BCD010F006B611A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17B2BCD010F006B611A /* FeedView.swift */; };
 		F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D17D2BCD0489006B611A /* FeedCell.swift */; };
 		F298D1812BCD04DF006B611A /* FeedCellBottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */; };
@@ -77,7 +81,7 @@
 
 /* Begin PBXFileReference section */
 		F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
-		F218930A2BCF836F00014584 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F218930A2BCF836F00014584 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		F218930C2BCF87C200014584 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostModel.swift; path = Hanbyulstagram/Core/User/PostModel.swift; sourceTree = SOURCE_ROOT; };
 		F218930E2BCF8B4F00014584 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Hanbyulstagram/Extension/DateExtension.swift; sourceTree = SOURCE_ROOT; };
 		F21893132BCF8FA600014584 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,10 @@
 		F260E8EB2BD0F05400D9105F /* FireBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRepository.swift; sourceTree = "<group>"; };
 		F260E8ED2BD0F50A00D9105F /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		F260E8EF2BD0FBF800D9105F /* FireBaseCollectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseCollectionKey.swift; sourceTree = "<group>"; };
+		F295AA432BEC97F00068434F /* LoginFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFeature.swift; sourceTree = "<group>"; };
+		F295AA472BEC98C70068434F /* AppleLoginFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginFeature.swift; sourceTree = "<group>"; };
+		F295AA492BED9DD50068434F /* SetNickNameFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNickNameFeature.swift; sourceTree = "<group>"; };
+		F295AA4B2BEDA5F60068434F /* TCA_AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_AlertExtension.swift; sourceTree = "<group>"; };
 		F298D17B2BCD010F006B611A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F298D17D2BCD0489006B611A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F298D1802BCD04DF006B611A /* FeedCellBottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellBottomButton.swift; sourceTree = "<group>"; };
@@ -163,6 +171,7 @@
 			children = (
 				F218930E2BCF8B4F00014584 /* DateExtension.swift */,
 				F2011B052BE4CCA000A8527A /* UIApplicationExtension.swift */,
+				F295AA4B2BEDA5F60068434F /* TCA_AlertExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -188,9 +197,9 @@
 		F22872FC2BD5D12B00D7AE39 /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				F22872FD2BD5D17800D7AE39 /* AppleSignInError.swift */,
-				F22872FF2BD5D17800D7AE39 /* AppleSignInManager.swift */,
 				F22873002BD5D17800D7AE39 /* AppleSignInManagerDependency.swift */,
+				F22872FF2BD5D17800D7AE39 /* AppleSignInManager.swift */,
+				F22872FD2BD5D17800D7AE39 /* AppleSignInError.swift */,
 				F22872FE2BD5D17800D7AE39 /* AppleUserEntity.swift */,
 			);
 			path = AppleSignIn;
@@ -223,6 +232,24 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		F295AA452BEC98AB0068434F /* AppleLoginButton */ = {
+			isa = PBXGroup;
+			children = (
+				F295AA472BEC98C70068434F /* AppleLoginFeature.swift */,
+				F2C8F6EC2BCE3E9000340BF6 /* AppleLoginButton.swift */,
+			);
+			path = AppleLoginButton;
+			sourceTree = "<group>";
+		};
+		F295AA462BEC98B30068434F /* SetNickNameView */ = {
+			isa = PBXGroup;
+			children = (
+				F295AA492BED9DD50068434F /* SetNickNameFeature.swift */,
+				F2C8F6EE2BCE49DB00340BF6 /* SetNickNameView.swift */,
+			);
+			path = SetNickNameView;
+			sourceTree = "<group>";
+		};
 		F298D17F2BCD048B006B611A /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +271,8 @@
 		F2C8F6E82BCE37A300340BF6 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				F2C8F6EC2BCE3E9000340BF6 /* AppleLoginButton.swift */,
-				F2C8F6EE2BCE49DB00340BF6 /* SetNickNameView.swift */,
+				F295AA452BEC98AB0068434F /* AppleLoginButton */,
+				F295AA462BEC98B30068434F /* SetNickNameView */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -273,8 +300,8 @@
 				F2E01BA32BC8CBB4004CA206 /* Resource */,
 				F2E01B942BC8C648004CA206 /* App */,
 				F2E01B932BC8C646004CA206 /* Core */,
-				F260E8EA2BD0F03900D9105F /* Repository */,
 				F2F487302BCFAD7D0074D80E /* Manager */,
+				F260E8EA2BD0F03900D9105F /* Repository */,
 				F233F1942BD0A23200977970 /* CommonView */,
 				F298D1862BCE1925006B611A /* CommonModifier */,
 				F2011B042BE4CC6200A8527A /* Extension */,
@@ -315,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				F260E8ED2BD0F50A00D9105F /* AuthenticationRepository.swift */,
+				F295AA432BEC97F00068434F /* LoginFeature.swift */,
 				F2C8F6E62BCE35B800340BF6 /* LogInView.swift */,
 				F2C8F6E82BCE37A300340BF6 /* Subviews */,
 			);
@@ -324,7 +352,7 @@
 		F2E01B962BC8C6A9004CA206 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				F218930A2BCF836F00014584 /* UserModel.swift */,
+				F218930A2BCF836F00014584 /* UserDTO.swift */,
 				F21893062BCF81FE00014584 /* Profile */,
 			);
 			path = User;
@@ -551,6 +579,7 @@
 				F2E86EB32BD08E4600AF4A20 /* PostNextView.swift in Sources */,
 				F2E01BB62BC8FF9F004CA206 /* ProfileGridView.swift in Sources */,
 				F233F1962BD0A24400977970 /* CustomLoadingView.swift in Sources */,
+				F295AA4A2BED9DD50068434F /* SetNickNameFeature.swift in Sources */,
 				F218930D2BCF87C200014584 /* PostModel.swift in Sources */,
 				F2C8F6E52BCE35A700340BF6 /* SearchView.swift in Sources */,
 				F22873012BD5D17800D7AE39 /* AppleSignInError.swift in Sources */,
@@ -560,14 +589,16 @@
 				F2F487322BCFAD8B0074D80E /* PHImageManager.swift in Sources */,
 				F2C8F6ED2BCE3E9000340BF6 /* AppleLoginButton.swift in Sources */,
 				F2E01BAC2BC8F5E1004CA206 /* ProfileHeaderView.swift in Sources */,
-				F218930B2BCF836F00014584 /* UserModel.swift in Sources */,
+				F218930B2BCF836F00014584 /* UserDTO.swift in Sources */,
 				F2F4872F2BCFAB0C0074D80E /* PHAsyncImage.swift in Sources */,
 				F298D1882BCE193E006B611A /* NavigationModifier.swift in Sources */,
 				F2C8F6EF2BCE49DB00340BF6 /* SetNickNameView.swift in Sources */,
+				F295AA4C2BEDA5F60068434F /* TCA_AlertExtension.swift in Sources */,
 				F260E8EC2BD0F05400D9105F /* FireBaseRepository.swift in Sources */,
 				F21893162BCF927E00014584 /* PostImageGridView.swift in Sources */,
 				F298D17E2BCD0489006B611A /* FeedCell.swift in Sources */,
 				F218930F2BCF8B4F00014584 /* DateExtension.swift in Sources */,
+				F295AA442BEC97F00068434F /* LoginFeature.swift in Sources */,
 				F2E01BB32BC8FDE7004CA206 /* ProfileHeaderStatView.swift in Sources */,
 				F260E8F02BD0FBF800D9105F /* FireBaseCollectionKey.swift in Sources */,
 				F298D18A2BCE1A58006B611A /* TabBarModifier.swift in Sources */,
@@ -576,6 +607,7 @@
 				F21893142BCF8FA600014584 /* PostView.swift in Sources */,
 				F260E8E72BD0ED7700D9105F /* UserDefaultKey.swift in Sources */,
 				F22873022BD5D17800D7AE39 /* AppleUserEntity.swift in Sources */,
+				F295AA482BEC98C70068434F /* AppleLoginFeature.swift in Sources */,
 				F2C8F6E72BCE35B800340BF6 /* LogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

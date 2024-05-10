@@ -11,49 +11,48 @@ import Combine
 // MARK: - Dependency
 
 protocol AppleSignInManagerDependency {
-    var didSuccessSignIn: PassthroughSubject<AppleSignInModel, Never> { get }
-    var didFailSignIn: PassthroughSubject<AppleSignInError, Never> { get }
+    var continuation: CheckedContinuation<AppleSignInEntity, Error>? { get }
 
-    func startSignIn()
+    func startSignIn() async throws -> AppleSignInEntity
 }
 
 // MARK: - DidComplete Function
 
 extension AppleSignInManagerDependency {
-    /// 애플로그인에 성공했을때의 처리를 담당하는 함수입니다.
-    func handleSucceedSignIn(credential: AppleIDCredentialDependency?) {
-        guard let credential else {
-            didFailSignIn.send(.invalidAppleIDCredential)
+
+    func didCompletedAuthorization(authorization: ASAuthorization) {
+        guard let credential = authorization.credential as? ASAuthorizationAppleIDCredential else {
+            continuation?.resume(throwing: AppleSignInError.invalidAppleIDCredential)
             return
         }
         guard let authorizationCode = credential.authorizationCode,
               let identityToken = credential.identityToken else {
-            didFailSignIn.send(.invalidAuthorizationData)
+            continuation?.resume(throwing: AppleSignInError.invalidAuthorizationData)
             return
         }
         let model = getAppleSignInEntity(credential: credential,
                                           authorizationCode: authorizationCode,
                                           identityToken: identityToken)
-        didSuccessSignIn.send(model)
+        continuation?.resume(returning: model)
     }
 
-    /// 애플로그인에 실패했을때의 처리를 담당하는 함수입니다.
-    func handleFailedSignIn(error: Error?) {
+    func didFailedAuthorization(error: Error) {
         guard let error = error as? ASAuthorizationError else {
-            return didFailSignIn.send(.errorTypeMismatch(error: error))
+            continuation?.resume(throwing: AppleSignInError.errorTypeMismatch(error: error))
+            return
         }
-        didFailSignIn.send(AppleSignInError.mapToAppleSignInError(errorCode: error.code))
+        continuation?.resume(throwing: AppleSignInError.mapToAppleSignInError(errorCode: error.code))
     }
 
     /// 애플로그인에 필요한 Entity를 생성하는 함수입니다.
-    private func getAppleSignInEntity(
+    func getAppleSignInEntity(
         credential: AppleIDCredentialDependency,
         authorizationCode: Data,
         identityToken: Data
-    ) -> AppleSignInModel {
+    ) -> AppleSignInEntity {
         let firstName = credential.fullName?.givenName ?? ""
         let lastName = credential.fullName?.familyName ?? ""
-        return AppleSignInModel(
+        return AppleSignInEntity(
             email: credential.email ?? "",
             name: "\(firstName) \(lastName)",
             userIdentifier: credential.user,

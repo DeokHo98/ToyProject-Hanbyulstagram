@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserModel: Identifiable, Codable {
+struct UserDTO: Identifiable, Codable {
     var id: String
     var userName: String
     var profileImageUrlString: String?
@@ -24,8 +24,8 @@ struct UserModel: Identifiable, Codable {
     }
 }
 
-extension UserModel {
-    static var mockModels: [UserModel] = [
+extension UserDTO {
+    static var mockModels: [UserDTO] = [
         .init(id: "", userName: "정한별", profileImageUrlString: "한별이", description: "월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월월"),
         .init(id: "", userName: "정세별", profileImageUrlString: "한별이3", description: "졸리다"),
         .init(id: "", userName: "정네별", profileImageUrlString: "한별이4", description: "벚꽃 이쁘다"),

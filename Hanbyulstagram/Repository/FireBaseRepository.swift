@@ -16,12 +16,23 @@ extension FireBaseRepository {
         Firestore.firestore()
     }
 
-    func setData(collection: FireBaseCollectionKey,
-                 document: String,
+    func setData(collectionKey: FireBaseCollectionKey,
+                 documentValue: String,
                  data: [String: Any]) async throws -> Void {
         do {
-            try await DB.collection(collection.rawValue).document(document).setData(data)
+            try await DB.collection(collectionKey.rawValue).document(documentValue).setData(data)
             return ()
+        } catch let error {
+            throw error
+        }
+    }
+
+    func getSnapShot(collectionKey: FireBaseCollectionKey,
+                     documentValue: String) async throws -> DocumentSnapshot {
+        do {
+            return try await DB.collection(collectionKey.rawValue)
+                .document(documentValue)
+                .getDocument()
         } catch let error {
             throw error
         }

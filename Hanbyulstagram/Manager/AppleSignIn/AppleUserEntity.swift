@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppleSignInModel {
+struct AppleSignInEntity: Equatable {
     let email: String
     let name: String
     let userIdentifier: String

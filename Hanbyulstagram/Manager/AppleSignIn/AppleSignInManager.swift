@@ -6,21 +6,22 @@
 //
 
 import AuthenticationServices
-import Combine
 
 // MARK: - AppleSignInManager
 
 final class AppleSignInManager: NSObject, AppleSignInManagerDependency {
-    let didFailSignIn = PassthroughSubject<AppleSignInError, Never>()
-    let didSuccessSignIn = PassthroughSubject<AppleSignInModel, Never>()
+    var continuation: CheckedContinuation<AppleSignInEntity, Error>?
 
-    func startSignIn() {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.performRequests()
+    func startSignIn() async throws -> AppleSignInEntity {
+        return try await withCheckedThrowingContinuation { [weak self] continuation in
+            self?.continuation = continuation
+            let appleIDProvider = ASAuthorizationAppleIDProvider()
+            let request = appleIDProvider.createRequest()
+            request.requestedScopes = [.fullName, .email]
+            let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+            authorizationController.delegate = self
+            authorizationController.performRequests()
+        }
     }
 }
 
@@ -31,15 +32,14 @@ extension AppleSignInManager: ASAuthorizationControllerDelegate {
         controller: ASAuthorizationController,
         didCompleteWithAuthorization authorization: ASAuthorization
     ) {
-        let credential = authorization.credential as? ASAuthorizationAppleIDCredential
-        handleSucceedSignIn(credential: credential)
+        didCompletedAuthorization(authorization: authorization)
     }
 
     func authorizationController(
         controller: ASAuthorizationController,
         didCompleteWithError error: Error
     ) {
-        handleFailedSignIn(error: error)
+        didFailedAuthorization(error: error)
     }
 }
 

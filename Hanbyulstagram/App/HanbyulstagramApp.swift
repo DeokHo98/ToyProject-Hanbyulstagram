@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
+import ComposableArchitecture
 
 class AppDelegate: NSObject, UIApplicationDelegate {
 
@@ -39,10 +40,10 @@ struct InstagramWithSwiftUIApp: App {
                 if windowProperty.isLoggedIn || UserDefaultsManager.isLogin {
                     MainTabBarView()
                 } else {
-                    LogInView()
-                }
-                if windowProperty.isLoading {
-                    CustomLoadingView()
+                    let store = Store(initialState: LoginFeature.State()) {
+                        LoginFeature()
+                    }
+                    LogInView(store: store)
                 }
             }
         }
